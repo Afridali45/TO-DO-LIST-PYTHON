@@ -1,6 +1,5 @@
 from tkinter import *
 from tkinter import messagebox
-
 no_of_tasks = 0
 def add_task():
     global no_of_tasks
@@ -23,7 +22,6 @@ def delete_task():
         messagebox.showwarning(title='WARNING!', message='Select a task to delete')
 def update_listbox_height():
     tasks.config(height=tasks.size())
-
 window = Tk()
 window.geometry("900x500")
 window.title("TO-DO LIST")
@@ -51,7 +49,7 @@ add.place(x=450, y=70)
 delete = Button(window,
                 font=('Arial',15),
                 bd=2,
-                text='COMPLETED',
+                text='DELETE',
                 relief='solid',
                 command=delete_task)
 delete.place(x=520, y=70)
